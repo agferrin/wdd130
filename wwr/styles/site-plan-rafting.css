@@ -7,8 +7,8 @@ Fonts are separated by a & */
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #247aba;
-  --secondary-color: #db8e1f;
+  --primary-color: #0E2E55;
+  --secondary-color: #FE7D15;
   --accent1-color: #3dbde9;
   --accent2-color: #ffffff;
 
@@ -17,18 +17,18 @@ Fonts are separated by a & */
   --paragraph-font: Ubuntu;
 
   /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #247aba;
+  --headline-color-on-white: #0E2E55;
   /* headlines on a white background */
   --headline-color-on-color: #ffffff;
   /* headlines on a colored background */
-  --paragraph-color-on-white: #247aba;
+  --paragraph-color-on-white: #0E2E55;
   /* paragraph text on a white background */
   --paragraph-color-on-color: #ffffff;
   /* paragraph text on a colored background */
-  --paragraph-background-color: #247aba;
+  --paragraph-background-color: #0E2E55;
   --nav-link-color: #ffffff;
-  --nav-background-color: #db8e1f;
-  --nav-hover-link-color: #247aba;
+  --nav-background-color: #FE7D15;
+  --nav-hover-link-color: #0E2E55;
   --nav-hover-background-color: #3dbde9;
 }
 
