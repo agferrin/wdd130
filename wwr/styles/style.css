@@ -1,5 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Ubuntu:ital,wght@0,400;0,700;1,700&display=swap');
+
+:root {
+  --heading-font: "Kaushan Script";
+  --paragraph-font: Ubuntu, Arial, sans-serif;
+  --primary-color: #0E2E55;
+  --secondary-color: #FE7D15;
+  --accent1-color: #3dbde9;
+  --accent2-color: #ffffff;
+}
+
 body {
-  background-color: #ffffff;
+  padding: 0;
+  margin: 0;
+  background-color: var(--accent2-color);
+  font-family: var(--paragraph-font);
+  font-size: 22px;
+}
+
+p {
+  margin: 0;
 }
 
 #content {
@@ -8,22 +27,31 @@ body {
 }
 
 header {
-  background-color: #0E2E55;
+  background-color: var(--primary-color);
 }
 
 nav a {
   text-align: center;
-  color: #ffffff;
+  color: var(--accent2-color);
   text-decoration: none;
+  padding: 35px;
 }
 
 nav a:hover {
-  background-color: #FE7D15;
-  color: #ffffff;
+  background-color: var(--secondary-color);
+  color: var(--accent2-color);
 }
 
 .logo, .icon {
   width: 80px;
+}
+
+.icon {
+  padding-top: 10px;
+}
+
+#logo_link {
+  padding-top: 5px;
 }
 
 #hero-img {
@@ -31,34 +59,69 @@ nav a:hover {
 }
 
 .home-title, h4 {
-  color: #004376;
+  color: var(--primary-color);
+}
+
+.home-title {
+  font-family: var(--heading-font);
+  font-size: 3em;
+  margin-top: 10px;
+}
+
+.card-img {
+  border: 10px solid var(--primary-color);
+  border-radius: 15px;
+}
+
+.msg {
+  line-height: 1.5em;
+  padding: 35px;
 }
 
 .msg h2, .msg p, footer, footer a {
   color: rgb(225, 225, 225);
 }
 
+.msg h2 {
+  font-family: var(--heading-font);
+}
+
+.msg p {
+  font-size: .8em;
+  padding-bottom: 15px;
+}
+
 .book, .join {
-  background-color: #3dbde9;
-  color: #fff;
+  background-color: var(--secondary-color);
+  color: var(--accent2-color);
   text-decoration: none;
+  font-size: 18px;
+  padding: 15px 30px;
+  margin-top: 50px;
+  border-radius: 5px;
 }
 
 .book:hover, .join:hover{
-  background-color: #FE7D15;
+  background-color: var(--accent1-color);
+}
+
+.rivers-card, .camping-card, .rapids-card {
+  margin: 200px 0;
 }
 
 #background {
-  background-color: #FE7D15;
+  background-color: var(--secondary-color);
   height: 725px;
 }
 
 .msg {
-  background-color: #0E2E55;
+  background-color: var(--primary-color);
 }
 
 footer {
-  background-color: #0E2E55;
+  background-color: var(--primary-color);
+  padding: 25px 50px;
+  margin-top: 200px;
 }
 
 footer p {
@@ -71,7 +134,11 @@ footer a {
 
 footer p a:hover {
   text-decoration: underline;
-  color: #FE7D15;
+  color: var(--secondary-color);
+}
+
+footer .social img {
+  padding-top: 15px;
 }
 
 #hero-msg h1,
@@ -85,4 +152,8 @@ footer p a:hover {
 
 main section {
   text-align: center;
+}
+
+main section img {
+  box-sizing: border-box;
 }
