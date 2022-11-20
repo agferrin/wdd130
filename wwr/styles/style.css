@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Ubuntu:ital,wght@0,400;0,700;1,700&display=swap');
 
 :root {
-  --heading-font: "Kaushan Script";
-  --paragraph-font: Ubuntu, Arial, sans-serif;
+  --heading-font: "Kaushan Script", 'Brush Script MT', Georgia;
+  --paragraph-font: Ubuntu, Arial, Verdana;
   --primary-color: #0E2E55;
   --secondary-color: #FE7D15;
   --accent1-color: #3dbde9;
