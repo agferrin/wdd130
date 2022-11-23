@@ -7,6 +7,7 @@
   --secondary-color: #FE7D15;
   --accent1-color: #3dbde9;
   --accent2-color: #ffffff;
+  /* Trying shodows from internet: https: //getcssscan.com/css-box-shadow-examples */
   --nice-shadow1: rgba(50, 50, 93, 0.75) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   --nice-shadow2: rgba(50, 50, 93, 0.75) -2px 1px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
@@ -36,7 +37,6 @@ header {
 
 nav {
   display: flex;
-  /* not necessary because my nav a's occupy the whole space */
   justify-content: space-around;
 }
 
@@ -123,9 +123,6 @@ nav a:hover {
 .card-img {
   /* prefer no border */
   /* border: 2px solid var(--secondary-color); */
-
-  /* Trying shodows from internet: https: //getcssscan.com/css-box-shadow-examples */
-  /* box-shadow: rgba(0, 0, 0, 0.65) 5px 5px 15px; */
   box-shadow: var(--nice-shadow1);
   border-radius: 10px;
   /* prefer a transition faster than 0.5s */
