@@ -107,7 +107,7 @@ nav a:hover {
 .home-grid {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(9, auto); 
+  grid-template-rows: repeat(9, minmax(100px, auto)); 
 }
 
 .home-title, h4 {
@@ -204,7 +204,7 @@ nav a:hover {
 }
 
 .rivers-card, .camping-card, .rapids-card {
-  margin: 200px 0;
+  margin: 20px 0;
 }
 
 #background {
@@ -223,7 +223,7 @@ nav a:hover {
 footer {
   background-color: var(--primary-color);
   padding: 25px 50px;
-  margin-top: 140px;
+  margin-top: 40px;
   display: flex;
   justify-content: space-around;
   align-items: center;
