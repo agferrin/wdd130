@@ -114,6 +114,14 @@ footer {
   grid-row: 2/3;
 }
 
+#questions-section img {
+  width: 100px;
+}
+
+#agenda-section img {
+  width: 100px;
+}
+
 /**************************************************************************/
 /********************************** MAP ***********************************/
 /**************************************************************************/
@@ -136,10 +144,10 @@ footer {
   grid-row: 1/3;
 }
 
-.location-section {
+.grid-section {
   width: 100%;
   height: 100%;
-  background-color: green;
+  /* background-color: green; */
   border: 1px solid #000;
   grid-column: 2/4;
   grid-row: 1/2;
@@ -155,6 +163,22 @@ footer {
 
 #map-section > img {
   height: 100%;
+}
+
+#chapel-section > img {
+  width: 100px;
+}
+
+#overflow-section img {
+  width: 100px;
+}
+
+#cultural-center-section img {
+  width: 100px;
+}
+
+#extra-rooms-section img {
+  width: 100px;
 }
 
 /**************************************************************************/
@@ -175,6 +199,10 @@ footer {
   width: 100%;
   height: 100%;
   background-color: purple;
+}
+
+#section1 img {
+  width: 100px;
 }
 
 #section2 {
