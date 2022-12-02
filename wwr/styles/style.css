@@ -458,11 +458,11 @@ label {
   text-align: right;
 }
 
-input textarea {
+input, textarea {
   font: var(--paragraph-font);
-  font-size: 1em;
+  font-size: 18px;
   /* Unifomr text field size */
-  width: 300px;
+  width: calc(100% - 300px);
   box-sizing: border-box;
 
   /* Mathc form field border */
@@ -488,7 +488,19 @@ textarea {
 }
 
 button {
-  margin-left: 0.5em;
+  margin-left: 5.8em;
+  border: none;
+  background-color: var(--accent1-color);
+  color: var(--accent2-color);
+  padding: 20px;
+  border-radius: 4px;
+  transition: width 0.2s, background-color 0.6s;
+  font: var(--paragraph-font);
+  font-size: 18px;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
 }
 
 #feedback {
