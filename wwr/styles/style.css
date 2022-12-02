@@ -429,6 +429,87 @@ main section img {
 /******************************* CONTACT US *******************************/
 /**************************************************************************/
 
+form {
+  /* Center the form on the page */
+  margin: 30px auto;
+  width: 100% - 120px;
+  /* Form outline */
+  padding: 1em;
+  margin: 1em;
+  border: 1px solid #ccc;
+  border-radius: .5em;
+  height: calc(100vh - 306px);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 1em;
+}
+
+label {
+  /* Uniform size and alignment */
+  display: inline-block;
+  width: 190px;
+  text-align: right;
+}
+
+input textarea {
+  font: var(--paragraph-font);
+  font-size: 1em;
+  /* Unifomr text field size */
+  width: 300px;
+  box-sizing: border-box;
+
+  /* Mathc form field border */
+  border: 1px solid #ccc;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #000;
+}
+
+textarea {
+  /* Align multiple text fields with their lables */
+  vertical-align: top;
+  /* Provide space to type some text */
+  height: 5em;
+}
+
+.button {
+  /* Align buttons with the text fields */
+  padding-left: 90px;
+  /* same size as the label elements */
+}
+
+button {
+  margin-left: 0.5em;
+}
+
+#feedback {
+  background-color: antiquewhite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: .5em;
+  /* make this element invisible until we are ready for it */
+  display: none;
+}
+
+.moveDown {
+  margin-top: 2em;
+}
+
+/**************************************************************************/
+/****************************** HOME @MEDIA *******************************/
+/**************************************************************************/
+
 @media screen and (max-width: 900px) {
 
   #hero,
