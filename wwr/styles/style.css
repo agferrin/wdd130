@@ -330,7 +330,7 @@ main section img {
 }
 
 .river-card1 {
-  height: 100vh;
+  height: 110vh;
   background-color: var(--secondary-color);
   display: grid;
   grid-template-columns: repeat(11, 1fr);
@@ -370,8 +370,12 @@ main section img {
   opacity: 1;
 }
 
+.short-paragraph {
+  height: 92%;
+}
+
 .river-card2 {
-  height: 100vh;
+  height: 110vh;
   background-color: var(--accent1-color);
   display: grid;
   grid-template-columns: repeat(11, 1fr);
@@ -412,6 +416,9 @@ main section img {
 }
 
 .reserve{
+  display: block;
+  margin: 20px auto;
+  width: 120px;
   background-color: var(--accent1-color);
   color: var(--accent2-color);
   text-decoration: none;
@@ -538,6 +545,16 @@ button:hover {
 
 @media screen and (max-width: 900px) {
 
+  nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #hero-msg .river-title {
+    margin-right: 0;
+    margin-top: 100px;
+  }
+
   #hero,
   .home-grid {
     display: block;
@@ -557,15 +574,21 @@ button:hover {
     z-index: 1;
   }
 
-  nav,
   footer {
     flex-direction: column;
   }
 
   nav a {
     display: block;
-    padding: 15px;
-    width: 90%;
+    padding: 10px 0;
+    width: 100%;
+  }
+
+  nav a:hover {
+    display: block;
+    padding: 10px 0;
+    /* margin-left: -10px; */
+    width: 110%;
   }
 
   #hero {
@@ -607,5 +630,117 @@ button:hover {
 
   footer > p {
     margin: 10px 10px;
+  }
+
+  /**********/
+  /* RIVERS */
+  /**********/
+
+  .river-card1, .river-card2 {
+    display: block;
+    padding: 20px 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .background1, .background2 {
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .river-card1 .background1 {
+    margin-left: 0;
+    opacity: .93;
+  }
+
+  .river-card1 .card-img1 {
+    margin-left: 0;
+    margin-bottom: 20px;
+    opacity: 1;
+  }
+
+  .river-card2 .background2 {
+    margin-left: 0;
+    opacity: .93;
+  }
+
+  .river-card2 .card-img2 {
+    margin-left: 0;
+    margin-bottom: 20px;
+    opacity: 1;
+  }
+
+  .river-card1:hover .background1 {
+    margin-left: 0;
+    opacity: .93;
+  }
+
+  .river-card1:hover .card-img1 {
+    margin-left: 0;
+    margin-bottom: 20px;
+    opacity: 1;
+  }
+
+  .river-card2:hover .background2 {
+    margin-left: 0;
+    opacity: .93;
+  }
+
+  .river-card2:hover .card-img2 {
+    margin-left: 0;
+    margin-bottom: 20px;
+    opacity: 1;
+  }
+}
+
+/**************************************************************************/
+/******************************** RIVER US ********************************/
+/**************************************************************************/
+
+@media screen and (max-width: 1326px) {
+  .river-card1, .river-card2 {
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .background1 {
+    height: 100%;
+  }
+
+  .background2 {
+    height: 100%;
+  }
+
+  .short-paragraph {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 1510px) {
+
+  .short-paragraph {
+    height: 105%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .river-main-grid p {
+    margin: 15px 10px;
+  }
+
+  .background1, .background2 {
+    padding: 10px;
+  }
+
+  .card-img1, .card-img2 {
+    margin-bottom: 20px;
+  }
+
+  .card-img1:hover,
+  .card-img2:hover {
+    margin-bottom: 20px;
   }
 }
