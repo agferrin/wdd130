@@ -64,7 +64,7 @@
   /* This is the parent of the activity 3 boxes. */
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 50px;
+  column-gap: 75px;
 }
 .red3 {
   width: 100%; 
@@ -75,15 +75,13 @@
 .green3 {
   box-sizing: border-box;
   width: 100%;
-  /* width: calc(100% - 25px); */
-  height: 100px; 
+  height: 200px; 
   background-color: green;
 } 
 .yellow3 {
   box-sizing: border-box;
   width: 100%;
-  /* width: calc(100% - 25px); */
-  height: 100px; 
+  height: 200px; 
   background-color: gold; 
 } 
 .blue3 {
