@@ -8,79 +8,79 @@
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <header>
-      <img src="images/Logo.png" alt="" class="logo" />
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="map.html">Map</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <main id="home-main">
-      <section id="video-section" controls>
-        <video width="320" height="240" autoplay muted>
+    <div class="content">
+      <header>
+        <a href="index.html" id="logo_link">
+          <img src="images/Logo.png" alt="" class="logo" />
+        </a> 
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="map.html">Map</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+      </header>
+  
+      <main id="home-main">
+        <section id="video-cover"></section>
+        <video autoplay muted loop>
           <source src="videos/tempVideo.mp4" />
         </video>
-        <h1>Family Discovery Day</h1>
-        <h4>Come, know, understand</h4>
-      </section>
-      <section id="questions-section">
-        <img src="/familydiscoveryday/images/PeopleChapel.jpg" alt="">
-        <p>
-          Have you met a member of the Church of Jesus Christ of Latter-Day
-          Saints?
-        </p>
-        <p>
-          Have you heard terms like “The Plan of Salvations”, “Sealings”, “The
-          Book of Mormon”, “Family History”? Come and find out what those
-          exactly mean.
-        </p>
-        <p>
-          Enjoy the voices of the Choir sing Nearer, My God, to Thee. Check the
-          history of our city, its beginnings and projects for the future. Get
-          to know more about us with live action performances. Grab a snack
-        </p>
-      </section>
-      <section id="agenda-section">
-        <img src="/familydiscoveryday/images/Choir.jpg" alt="">
-        <h4>Agenda</h4>
-        <p>- Opening - 3:00 pm: o History of Manta o Family Search</p>
-        <p>
-          - The plan of Salvation - 4:00pm: o Premortal life o Mortal life o
-          Resurrection and grades of glory o Temples o The Atonement
-        </p>
-        <p>- Closure - 4:30pm:</p>
-        <p>
-          - Extra: o Create you FamilySearch account o Indexing and Records
-          preservation
-        </p>
-      </section>
-    </main>
+        <section id="slogan-section">
+          <div id="slogan">
+            <h1>Family Discovery Day</h1>
+            <h4>Come, know, understand</h4>
+          </div>
+        </section>
+        <div id="second-area">
+          <section id="questions-section">
+            <!-- absolute elements -->
+            <img src="images/home/chapelPic.png" alt="">
+            <div id="questions-cover">
+            <!-- reative elements -->
+            <div id="questions-border">
+              <!-- <p>
+                Have you met a member of the Church of Jesus Christ of Latter-Day
+                Saints?
+              </p> -->
+            </div>
+            </div>
+          </section>
+          <section id="agenda-section">
 
-    <footer>
-      <p>Family Discovery Day &copy; 2022 - Gabriel Ferrin</p>
-      <p><a href="/familydiscoveryday/site-plan.html">Site plan</a></p>
-      <a href="https://facebook.com" target="_blank">
-        <img
-          src="https://byui-wdd.github.io/wdd130/rafting_images/facebook.png"
-          alt="fb icon"
-        />
-      </a>
-      <a href="https://twitter.com" target="_blank">
-        <img
-          src="https://byui-wdd.github.io/wdd130/rafting_images/twitter.png"
-          alt="twitter icon"
-        />
-      </a>
-      <a href="https://instagram.com" target="_blank">
-        <img
-          src="https://byui-wdd.github.io/wdd130/rafting_images/instagram.png"
-          alt="instagram icon"
-        />
-      </a>
-    </footer>
+          </section>
+        </div>
+
+      </main>
+  
+      <footer>
+        <p>Family Discovery Day &copy; 2022 - Gabriel Ferrin</p>
+        <p>
+          <a href="/familydiscoveryday/site-plan.html" class="sitePlan">
+            Site plan
+          </a>
+        </p>
+        <div class="socialIcons">
+          <a href="https://facebook.com" target="_blank">
+            <img
+              src="https://byui-wdd.github.io/wdd130/rafting_images/facebook.png"
+              alt="fb icon"
+            />
+          </a>
+          <a href="https://twitter.com" target="_blank">
+            <img
+              src="https://byui-wdd.github.io/wdd130/rafting_images/twitter.png"
+              alt="twitter icon"
+            />
+          </a>
+          <a href="https://instagram.com" target="_blank">
+            <img
+              src="https://byui-wdd.github.io/wdd130/rafting_images/instagram.png"
+              alt="instagram icon"
+            />
+          </a>
+        </div>
+
+      </footer>
+    </div>
   </body>
 </html>
