@@ -204,12 +204,14 @@ video {
 
 #second-area {
   width: 100%;
+  min-height: 600px;
   height: calc(100vh - 60px);
   display: flex;
 }
 
 .paragraph-section {
   width: 50%;
+  min-height: 600px;
   height: calc(100vh - 60px);
 }
 
@@ -217,6 +219,7 @@ video {
   position: absolute;
   z-index: 0;  
   width: 50%;
+  min-height: 600px;
   height: calc(100vh - 60px);
   background-color: var(--primary-even-darker);
   opacity: .1;
@@ -234,6 +237,7 @@ video {
   position: absolute;
   z-index: -1;
   width: 50%;
+  min-height: 600px;
   height: calc(100vh - 60px);
   object-fit: cover;
 }
@@ -482,5 +486,12 @@ video {
     margin: 25px;
     font-size: 40px;
   }
+
+}
+
+@media screen and (max-height: 700px) {
+.questions-border p {
+  font-size: 18px;
+}
 
 }
