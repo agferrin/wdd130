@@ -278,24 +278,45 @@ video {
 /* MAP-MAIN */
 /************/
 
-/* #map-main {
+#map-main {
   display: grid;
   grid-template-columns: 1.6fr repeat(4, 1fr);
-  grid-template-rows: calc(50vh - 60px) calc(50vh - 60px);
+  grid-template-rows: calc(50vh - 80px) calc(50vh - 80px);
 }
 
 #map-section {
   width: 100%;
   height: 100%;
-  background-color: blue;
+  text-align: center;
+  background-color: white;
   grid-column: 1/2;
   grid-row: 1/3;
 }
 
+#map-section>img.transparent {
+  transition: .3s;
+  opacity: 0;
+}
+
+#map-section>img.visible {
+  transition: .3s;
+  opacity: 1;
+}
+
+.headerTitle {
+  font-family: var(--home-page-font);
+  display: flex;
+  background-color: var(--secondary-color);
+  font-size: 12px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
 .grid-section {
+  position: relative;
   width: 100%;
   height: 100%;
-  border: 1px solid #000;
   grid-column: 2/4;
   grid-row: 1/2;
 }
@@ -312,21 +333,59 @@ video {
   height: 100%;
 }
 
-#chapel-section > img {
-  width: 100px;
-}
-
-#overflow-section img {
-  width: 100px;
-}
-
-#cultural-center-section img {
-  width: 100px;
-}
-
+#chapel-section > img,
+#overflow-section img,
+#cultural-center-section img,
 #extra-rooms-section img {
-  width: 100px;
-} */
+  background-color: var(--primary-darker);
+  position: absolute;
+  border: 1px solid var(--primary-color);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.cover {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-even-darker);
+  opacity: .1;
+  transition: .4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cover:hover {
+  opacity: 0.90;
+}
+
+.border {
+  border: 1px solid white;
+  box-sizing: border-box;
+  width: calc(100% - 47px);
+  height: calc(100% - 47px);
+  font-size: 13px;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  visibility: hidden;
+  transition: .4s;
+}
+
+.cover:hover .border {
+  visibility: visible;
+  padding-top: 0;
+}
+
+.border > h4, .border p {
+  margin: 0;
+}
 
 /**************************************************************************/
 /********************************* CONTACT ********************************/
@@ -377,9 +436,9 @@ video {
     margin-right: 10px;
   }
 
-.questions-border {
-  font-size: 20px;
-}
+  .questions-border {
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -390,15 +449,17 @@ video {
 
   .paragraph-section {
     width: 100%;
-    height: 50%;
+    height: 732px;
   }
 
   .paragraph-section img {
     width: 100%;
+    height: 732px;
   }
 
   .questions-cover {
     width: 100%;
+    height: 732px;
   }
 }
 
@@ -445,6 +506,7 @@ video {
   /**************************************************************************/
   /********************************* COMMON *********************************/
   /**************************************************************************/
+
   header,
   footer {
     font-size: 12px;
@@ -496,8 +558,7 @@ video {
 }
 
 @media screen and (max-height: 700px) {
-.questions-border p {
-  font-size: 18px;
-}
-
+  .questions-border p {
+    font-size: 18px;
+  }
 }
