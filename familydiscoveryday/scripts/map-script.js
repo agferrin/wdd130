@@ -24,7 +24,6 @@ chapelSection = document
   .getElementById("chapel-section");
 
 chapelSection.onmouseenter = () => {
-  mapContainer.style.backgroundColor = "#001020";
   mapImage.classList.remove("visible");
   mapImage.classList.add("transparent");
   setTimeout(() => {
@@ -35,7 +34,6 @@ chapelSection.onmouseenter = () => {
 };
 
 chapelSection.onmouseleave = () => {
-  mapContainer.style.backgroundColor = "white";
   mapImage.classList.remove("visible");
   mapImage.classList.add("transparent");
   setTimeout(() => {
@@ -50,7 +48,6 @@ overflowSection = document
   .getElementById("overflow-section");
 
 overflowSection.onmouseenter = () => {
-  mapContainer.style.backgroundColor = "#001020";
   mapImage.classList.remove("visible");
   mapImage.classList.add("transparent");
   setTimeout(() => {
@@ -61,7 +58,6 @@ overflowSection.onmouseenter = () => {
 };
 
 overflowSection.onmouseleave = () => {
-  mapContainer.style.backgroundColor = "white";
   mapImage.classList.remove("visible");
   mapImage.classList.add("transparent");
   setTimeout(() => {
@@ -76,7 +72,6 @@ culturalSection = document
   .getElementById("cultural-center-section");
 
 culturalSection.onmouseenter = () => {
-  mapContainer.style.backgroundColor = "#001020";
   mapImage.classList.remove("visible");
   mapImage.classList.add("transparent");
   setTimeout(() => {
@@ -87,7 +82,6 @@ culturalSection.onmouseenter = () => {
 };
 
 culturalSection.onmouseleave = () => {
-  mapContainer.style.backgroundColor = "white";
   mapImage.classList.remove("visible");
   mapImage.classList.add("transparent");
   setTimeout(() => {
@@ -102,7 +96,6 @@ extraSection = document
   .getElementById("extra-rooms-section");
 
 extraSection.onmouseenter = () => {
-  mapContainer.style.backgroundColor = "#001020";
   mapImage.classList.remove("visible");
   mapImage.classList.add("transparent");
   setTimeout(() => {
@@ -113,7 +106,6 @@ extraSection.onmouseenter = () => {
 };
 
 extraSection.onmouseleave = () => {
-  mapContainer.style.backgroundColor = "white";
   mapImage.classList.remove("visible");
   mapImage.classList.add("transparent");
   setTimeout(() => {
